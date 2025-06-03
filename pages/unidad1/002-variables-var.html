@@ -1,0 +1,181 @@
+<html lang="es">
+
+<head>
+    <title>UNAH - COPAN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenido">
+        <h1>Algoritmos y Estructuras de Datos</h1>
+        <a href="https://www.unah.edu.hn" target="_blank">UNAH - COPAN</a>
+        <p>Variables con var</p>
+        <p class="hashtag">#ProgramaPUMA</p>
+        <a href="/">Regresar</a>
+    </div>
+
+    <main>
+        <h2>Variables con <code>var</code> en JavaScript</h2>
+
+
+        <div class="explicacion">
+            <p><strong>¿Qué es una variable?</strong></p>
+            <p>Una variable es un contenedor que almacena un valor de datos. En JavaScript, <code>var</code> es una de
+                las formas de declarar variables.</p>
+        </div>
+
+
+        <!-- Ejemplo 1: Declaración básica -->
+        <div class="ejemplo">
+            <h4>1. Declaración Básica de Variables</h4>
+            <p>Podemos inicializar una variable con un valor:</p>
+            <div class="codigo-bloque">
+                <code>var producto = "Semitas";
+console.log(producto); // Resultado: Semitas</code>
+            </div>
+        </div>
+
+
+        <!-- Ejemplo 2: Reasignación -->
+        <div class="ejemplo">
+            <h4>2. Reasignación de Variables</h4>
+            <p>Las variables declaradas con <code>var</code> se pueden reasignar:</p>
+            <div class="codigo-bloque">
+                <code>var producto = "Semitas";
+producto = "Cafe";
+console.log(producto); // Resultado: Cafe</code>
+            </div>
+        </div>
+
+
+        <!-- Ejemplo 3: Tipado dinámico -->
+        <div class="ejemplo">
+            <h4>3. Tipado Dinámico</h4>
+            <p>JavaScript es un lenguaje de tipado dinámico, no necesitamos especificar el tipo de dato:</p>
+            <div class="codigo-bloque">
+                <code>var producto = "Cafe";     // String
+producto = 20;           // Number
+producto = true;         // Boolean
+console.log(producto);   // Resultado: true</code>
+            </div>
+        </div>
+
+
+        <!-- Ejemplo 4: Variables sin valor inicial -->
+        <div class="ejemplo">
+            <h4>4. Variables sin Valor Inicial</h4>
+            <p>Podemos declarar variables sin asignar un valor inicial:</p>
+            <div class="codigo-bloque">
+                <code>var disponible;           // undefined
+disponible = true;       // Asignamos valor después
+console.log(disponible); // Resultado: true</code>
+            </div>
+        </div>
+
+
+        <!-- Ejemplo 5: Múltiples variables -->
+        <div class="ejemplo">
+            <h4>5. Declaración de Múltiples Variables</h4>
+            <p>Podemos declarar múltiples variables en una sola línea:</p>
+            <div class="codigo-bloque">
+                <code>var categoria = 'Panes',
+   marca = 'La Popular',
+   calificacion = 5;
+
+
+console.log(categoria, marca, calificacion);</code>
+            </div>
+        </div>
+
+
+        <!-- Reglas de nomenclatura -->
+        <div class="ejemplo">
+            <h4>6. Reglas de Nomenclatura</h4>
+            <p>Ejemplos de nombres válidos e inválidos para variables:</p>
+            <div class="codigo-bloque">
+                <code>// ❌ INCORRECTO - No puede empezar con número
+// var 99dias;
+
+
+// ✅ CORRECTO
+var dias99;
+var _usuario;
+var __usuario;
+var $precio;</code>
+            </div>
+            <div class="advertencia">
+                <strong>Regla importante:</strong> Los nombres de variables no pueden comenzar con un número.
+            </div>
+        </div>
+
+
+        <!-- Convenciones de nomenclatura -->
+        <div class="ejemplo">
+            <h4>7. Convenciones de Nomenclatura</h4>
+            <p>Diferentes estilos para nombrar variables con múltiples palabras:</p>
+            <div class="codigo-bloque">
+                <code>// Camel Case (Recomendado en JavaScript)
+var nombreProducto;
+
+
+// Pascal Case
+var NombreProducto;
+
+
+// Snake Case
+var nombre_producto;
+
+
+// Sin separación (No recomendado)
+var nombreproducto;</code>
+            </div>
+            <div class="nota">
+                <strong>Recomendación:</strong> En JavaScript se prefiere el <strong>camelCase</strong> para nombrar
+                variables.
+            </div>
+        </div>
+
+
+        <!-- Ejemplo del ámbito -->
+        <div class="ejemplo">
+            <h4>8. Ámbito (Scope) de var</h4>
+            <p>Las variables <code>var</code> tienen ámbito de función y pueden ser redeclaradas:</p>
+            <div class="codigo-bloque">
+                <code>function ejemploAmbito() {
+   var x = 10;
+   if (true) {
+       var x = 20; // Esta x sobrescribe la anterior
+       console.log("Dentro del if:", x); // 20
+   }
+   console.log("Fuera del if:", x); // 20
+}</code>
+            </div>
+            <div class="advertencia">
+                <strong>Importante:</strong> <code>var</code> no respeta el ámbito de bloque, solo el de función.
+            </div>
+        </div>
+
+
+        <div class="explicacion">
+            <h3>Puntos Importantes</h3>
+            <ul style="text-align: left;">
+                <li><code>var</code> se usa para declarar variables en JavaScript</li>
+                <li>Las variables pueden ser reasignadas</li>
+                <li>JavaScript es de tipado dinámico</li>
+                <li>Se pueden declarar sin valor inicial</li>
+                <li>Tienen ámbito de función, no de bloque</li>
+                <li>Se recomienda usar camelCase para los nombres</li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="../../js/unidad1/002-variables-var.js"></script>
+</body>
+
+</html>

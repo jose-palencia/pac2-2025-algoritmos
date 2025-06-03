@@ -7,36 +7,121 @@
 */
 
 body {
-    background-color: #1c1c1c;
-    color: white;
-    font-family: "Roboto Condensed", sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+   background-color: #1c1c1c;
+   color: #ffffff;
+   font-family: 'Carrois Gothic SC', sans-serif;
+   text-align: center;
+   margin: 0;
+   padding: 0;
 }
+
 
 .contenido {
-    max-width: 600px;
-    margin: 50px auto;
+   max-width: 600px;
+   margin: 50px auto;
 }
+
 
 h1 {
-    color: #ffcc00;
+   color: #ffcc00;
 }
+
 
 a {
-    color: #ffcc00;
-    text-decoration: none;
+   color: #ffcc00;
+   text-decoration: none;
 }
+
 
 a:hover {
-    text-decoration: underline;
+   text-decoration: underline;
 }
+
 
 p {
-    margin-bottom: 20px;
+   margin-bottom: 20px;
 }
 
+
 .hashtag {
-    color: #00cc66;
+   color: #00cc66;
+}
+
+
+.ejemplo {
+   background-color: #2a2a2a;
+   border: 1px solid #444;
+   border-radius: 5px;
+   padding: 15px;
+   margin: 20px 0;
+   text-align: left;
+}
+
+
+.ejemplo h4 {
+   color: #ffcc00;
+   margin-top: 0;
+   text-align: center;
+}
+
+
+code {
+   background-color: #333;
+   color: #00cc66;
+   padding: 2px 6px;
+   border-radius: 3px;
+   font-family: 'Courier New', monospace;
+}
+
+
+.codigo-bloque {
+   background-color: #1a1a1a;
+   border: 1px solid #555;
+   border-radius: 5px;
+   padding: 15px;
+   margin: 10px 0;
+   overflow-x: auto;
+}
+
+
+.codigo-bloque code {
+   background: none;
+   padding: 0;
+   display: block;
+   white-space: pre;
+   line-height: 1.4;
+}
+
+
+.explicacion {
+   background-color: #2d2d3d;
+   border-left: 4px solid #00cc66;
+   padding: 15px;
+   margin: 15px 0;
+   border-radius: 0 5px 5px 0;
+}
+
+
+.advertencia {
+   background-color: #4d2d2d;
+   border-left: 4px solid #ff6666;
+   padding: 15px;
+   margin: 15px 0;
+   border-radius: 0 5px 5px 0;
+}
+
+
+.nota {
+   background-color: #3d3d2d;
+   border-left: 4px solid #ffcc00;
+   padding: 15px;
+   margin: 15px 0;
+   border-radius: 0 5px 5px 0;
+}
+
+
+main {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 20px;
 }
